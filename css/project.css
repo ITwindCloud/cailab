@@ -1,0 +1,137 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.padding{
+    padding-left: 18%;
+    padding-right:18%;
+}
+
+/* || Title */
+#title{
+    position: relative;
+    height:200px;
+}
+
+#background{
+    height:200px;
+    width:100%;
+    background-image: url('../materials/lab.jpg');
+    background-size:cover;
+    opacity: 0.3;
+}
+
+
+#subject-name{
+    position:absolute;
+    height:130px;
+    min-width:525px;
+    top:50%;
+    transform:translateY(-50%);
+    display: flex;
+    align-items:center;
+    opacity: 1;
+}
+
+#subject-name > div:last-child{
+    margin-left:30px;
+    opacity: 1;
+}
+
+#subject-name .lab-name{
+    font-size:150%;
+    font-weight: bold;
+    opacity: 1;
+}
+
+#subject-name p{
+    font-size:120%;
+}
+#subject-name p.lab-intr{
+    margin:8px 0;
+}
+
+/* Navigation */
+#navi{
+    height: 50px;
+    background-color:#58B19F;
+    display: flex;
+    font-size:20px;
+    color:#2C3A47;
+}
+#navi > div{
+    width:120px;
+    text-align: center;
+    line-height:50px;
+}
+#navi .selected{
+    background-color:white;
+}
+
+/* || contents */
+#cont{
+    background-color:#f0f3f5;
+    
+}
+#cont > div{
+    background-color: white;
+    padding:20px 60px;
+    min-height: 62vh;
+}
+
+#cont > div > div:first-child{
+    font-size:20px;
+}
+#cont > div > div:first-child::before{
+    content:'';
+    border:2px solid #182C61;
+    margin-right:16px;
+    font-size:16px;
+}
+
+#cont ol{
+    padding-left:14px;
+}
+#cont li{
+    line-height:26px;
+    margin-top:6px;
+}
+
+
+
+
+
+/* || Copy */
+#copy{
+    height:80px;
+    color:white;
+    font-size:14px;
+    display:flex;
+    background-color:#2C3A47;
+    align-items: center;
+}
+
+#copy > div:first-child{
+    flex:3;
+}
+#copy > div:last-child{
+    flex:2;
+    text-align: right;
+}
+
+#copy > div p:first-child{
+    font-size:16px;
+    line-height:24px;
+}
+#copy img{
+    width:1.2em;
+    vertical-align: middle;
+}
+
